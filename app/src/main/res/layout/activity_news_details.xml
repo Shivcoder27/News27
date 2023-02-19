@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#060706"
+                        android:id="@+id/txt_DTitle"
+                        android:textSize="20sp"
+                       />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height= "220dp"
+                        android:id="@+id/img_Dnews"
+                        android:src="@drawable/imgnotfound"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_Dauthor"
+                        android:textColor="#3DDA43"
+                        android:textSize="15sp"
+                        android:layout_marginTop="7dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_Dtime"
+                        android:textColor="#051005"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_D_detail"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_margin="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_D_det_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_margin="14dp"
+                        />
+
+
+
+        </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
